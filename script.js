@@ -5,7 +5,7 @@ function compute()
     var years = document.getElementById("years").value;
 
     if (principal == "") { //Here Check is empty
-        alert("Amount can't by empty");
+        alert("Amount can't by empty or alphabet character");
         document.getElementById("principal").focus();
         return false;
     }else{
@@ -25,6 +25,6 @@ function compute()
 }
 
 function showVal(newVal){ //Show range value in span
-    document.getElementById("showRate").innerHTML=newVal;
+    document.getElementById("showRate").innerHTML=newVal + '%';
 }
         
